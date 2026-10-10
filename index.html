@@ -1842,9 +1842,9 @@ function criarCardPagina(item) {
     <div class="pagina-nome">${p.nome || "Página Sem Nome"}</div>
     <div class="pagina-info">Criada em: ${formatarDataHora(p.criadoEm)}${p.atualizadoEm && p.atualizadoEm !== p.criadoEm ? ` &nbsp;|&nbsp; Atualizada em: ${formatarDataHora(p.atualizadoEm)}` : ""}<br>Botões de Arquivos: ${p.downloads?.length || 0}</div>
     <div class="pagina-acoes">
-      <button class="btn-acao btn-editar" onclick="editarPagina(${i})">🖊️ EDITAR</button>
-      <button class="btn-acao btn-codigo" onclick="verCodigo(${i})">💻 VER CÓDIGO HTML</button>
-      <button class="btn-acao btn-favoritar ${favorito ? "ativo" : ""}" onclick="toggleFavorito(${i})">${favorito ? "⭐ FAVORITO" : "☆ FAVORITAR"}</button>
+      <button class="btn-acao btn-editar" onclick="editarPagina(${i})">🖊️ </button>
+      <button class="btn-acao btn-codigo" onclick="verCodigo(${i})">👁️</button>
+      <button class="btn-acao btn-favoritar ${favorito ? "ativo" : ""}" onclick="toggleFavorito(${i})">${favorito ? "⭐ FAVORITO" : "☆"}</button>
       <button class="btn-acao btn-excluir" onclick="excluirPagina(${i})">🗑️</button>
     </div>`;
   return div;
