@@ -1844,7 +1844,7 @@ function criarCardPagina(item) {
     <div class="pagina-acoes">
       <button class="btn-acao btn-editar" onclick="editarPagina(${i})">🖊️ </button>
       <button class="btn-acao btn-codigo" onclick="verCodigo(${i})">👁️</button>
-      <button class="btn-acao btn-favoritar ${favorito ? "ativo" : ""}" onclick="toggleFavorito(${i})">${favorito ? "⭐ FAVORITO" : "☆"}</button>
+      <button class="btn-acao btn-favoritar ${favorito ? "ativo" : ""}" onclick="toggleFavorito(${i})">${favorito ? "⭐ ❌" : "⭐"}</button>
       <button class="btn-acao btn-excluir" onclick="excluirPagina(${i})">🗑️</button>
     </div>`;
   return div;
